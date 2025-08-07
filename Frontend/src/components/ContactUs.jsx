@@ -1,15 +1,26 @@
 import React from "react";
+import "./ContactUs.css";
 
-const ContactUs = () => {
+const ContactUs = ({ onClose }) => {
   return (
-    <div id="contact_us">
-      <img src="Images/crossIcon.png" alt="close" id="ContactCrosIcon" />
-      <p className="h5" style={{ color: "blue" }}>Got A Question</p>
+    <div id="contact_us" className="show">
+      <img
+        src="Images/crossIcon.png"
+        alt="Close"
+        id="ContactCrosIcon"
+        onClick={onClose}
+      />
+
+      <p className="h5" style={{ color: "blue" }}>
+        Got A Question
+      </p>
       <p className="display-6">Contact us</p>
       <p>
-        We’re here to help and answer any questions you might have. We look
-        forward to hearing from you!
+        We’re here to help and answer any questions you might have.
+        <br />
+        We look forward to hearing from you!
       </p>
+
       <form action="contactUsInfo.php" method="GET">
         <center>
           <div className="contactInput">
@@ -17,16 +28,23 @@ const ContactUs = () => {
             <input type="text" placeholder="Name" name="Name" required />
           </div>
         </center>
-        <br />
+        <br /> <br />
         <center>
           <div className="contactInput">
             <i className="fa-solid fa-envelope"></i>&nbsp;
-            <input type="email" placeholder="Email" name="Email" required />
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+              autoComplete="email"
+              required
+            />
           </div>
         </center>
         <br />
+
         <label htmlFor="message" id="messageLabel">
-          &nbsp;&nbsp;&nbsp;&nbsp;Message
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message
         </label>
         <br />
         <textarea
@@ -37,7 +55,13 @@ const ContactUs = () => {
           rows="5"
           required
         ></textarea>
-        <input type="submit" id="contactSubmit" style={{ border: "2px solid blue" }} />
+
+        <input
+          type="submit"
+          id="contactSubmit"
+          value="Submit"
+          style={{ border: "2px solid blue" }}
+        />
       </form>
     </div>
   );

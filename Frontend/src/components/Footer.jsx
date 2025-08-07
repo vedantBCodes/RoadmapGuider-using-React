@@ -56,8 +56,8 @@ const Footer = () => {
       <hr style={{ border: "1px solid white" }} />
       <div id="copyrightLine">
         <h4 className="text-center copyrightLine">
-          copyright <img src="Images/copyrightIcon6.png" alt="" className="logo" /> Made with
-          <img src="Images/heartlogo.png" alt="" className="logo" /> by Deversh Dandale. All rights reserved.
+          copyright <img src="Images/copyrightIcon6.png" alt="" className="logo" width={30}/> Made with
+          <img src="Images/heartlogo.png" alt="" className="logo" width={35}/> by Deversh Dandale. All rights reserved.
         </h4>
       </div>
     </div>

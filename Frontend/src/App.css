@@ -23,10 +23,6 @@ nav {
   align-items: center;
 }
 
-.websiteLogo {
-  border-radius: 50%;
-}
-
 #aboutAndSignIn a {
   margin: 0 5px;
   font-weight: 500;
@@ -181,4 +177,9 @@ nav {
 
 .upArrowButton.active {
   display: block;
+}
+@media (max-width: 768px) {
+  #clockContainer {
+    display: none;
+  }
 }

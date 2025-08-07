@@ -1,0 +1,80 @@
+#contact_us {
+  display: none; /* Will be shown via React conditionally */
+  margin: 20px;
+  position: absolute;
+  top: 85px;
+  left: 500px;
+  width: 450px;
+  padding: 50px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px rgb(190, 190, 190);
+  z-index: 999;
+}
+
+#contact_us input {
+  border: 2px solid white;
+  background-color: white;
+}
+
+#contact_us input:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+.contactInput, textarea {
+  padding: 5px 0px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+  text-align: center;
+}
+
+.contactInput:hover {
+  box-shadow: 5px 5px 5px 5px rgb(190, 190, 190);
+  transition: 1s;
+}
+
+.contactInput {
+  width: 250px;
+  text-align: center;
+}
+
+#contact_us > label {
+  font-size: 20px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+#contactSubmit {
+  padding: 10px 30px;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+  left: 120px;
+  color: blue;
+  border: 2px solid black;
+}
+
+#contactSubmit:hover {
+  background-color: blue;
+  color: white;
+  transition: 1s;
+}
+
+#ContactCrosIcon {
+  width: 30px;
+  position: relative;
+  left: 350px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+#message {
+  font-size: 20px;
+}
+#contact_us.show {
+  display: block;
+}

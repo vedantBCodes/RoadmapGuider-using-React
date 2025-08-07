@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+nav {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.domainName {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.websiteLogo {
+  border-radius: 50%;
+}
+
+#aboutAndSignIn a {
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+.profileImg {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* Home Banner */
+.homePageBgImage {
+  width: 100%;
+  height: auto;
+}
+
+.quote {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Clock */
+#clockContainer {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: black;
+  transform-origin: bottom center;
+}
+
+#hour {
+  width: 6px;
+  height: 40px;
+  top: 20px;
+  left: 57px;
+}
+
+#minute {
+  width: 4px;
+  height: 50px;
+  top: 10px;
+  left: 58px;
+}
+
+#second {
+  width: 2px;
+  height: 60px;
+  top: 0;
+  left: 59px;
+  background: red;
+}
+
+/* Cards & Skills Section */
+.skillsPage {
+  background: #f9f9f9;
+}
+
+.card {
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* Join Section */
+.joinPage {
+  background-color: #eaf4ff;
+  text-align: center;
+}
+
+.subscribeBox {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+
+.subscribeBox:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Community */
+.communityText {
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+/* Footer */
+#footer {
+  background: #222;
+  color: white;
+  padding: 30px;
+}
+
+.emailBox {
+  padding: 10px;
+  width: 300px;
+}
+
+.subscribeBox {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.icons {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Scroll to top */
+.upArrowButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.upArrowButton.active {
+  display: block;
+}

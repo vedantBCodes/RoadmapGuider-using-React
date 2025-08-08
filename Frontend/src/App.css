@@ -1,63 +1,53 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* ===== GENERAL LAYOUT ===== */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(221, 218, 211);
+  position: relative;
+  overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Navbar */
-nav {
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-}
-
-.domainName {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-
-#aboutAndSignIn a {
-  margin: 0 5px;
-  font-weight: 500;
-}
-
-.profileImg {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-/* Home Banner */
 .homePageBgImage {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* ===== QUOTE SECTION ===== */
 .quote {
   position: absolute;
-  top: 25%;
-  left: 10%;
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  top: 20%;
+  left: 5%;
+  width: 350px;
+  font-size: 30px;
+  color: black;
+  z-index: 3;
 }
 
-/* Clock */
+.quote input {
+  border-radius: 10px;
+  background-color: rgb(206, 206, 211);
+  color: black;
+  padding: 6px 16px;
+  border: 2px solid blue;
+  margin-top: 10px;
+}
+
+.quote input:hover {
+  color: rgb(21, 21, 226);
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* ===== ANALOG CLOCK ===== */
 #clockContainer {
   position: absolute;
-  top: 70px;
-  right: 20px;
-  width: 120px;
-  height: 120px;
-  border: 5px solid black;
-  border-radius: 50%;
-  position: relative;
+  top: 40px;
+  right: 5%;
+  height: 200px;
+  width: 200px;
+  background: url(Images/clockImage3.png) no-repeat;
+  background-size: 100%;
 }
 
 #hour,
@@ -65,121 +55,258 @@ nav {
 #second {
   position: absolute;
   background: black;
-  transform-origin: bottom center;
+  border-radius: 10px;
+  transform-origin: bottom;
 }
 
 #hour {
-  width: 6px;
-  height: 40px;
-  top: 20px;
-  left: 57px;
+  width: 4%;
+  height: 25%;
+  top: 25%;
+  left: 48%;
 }
 
 #minute {
-  width: 4px;
-  height: 50px;
-  top: 10px;
-  left: 58px;
+  width: 3%;
+  height: 35%;
+  top: 15%;
+  left: 48.5%;
 }
 
 #second {
-  width: 2px;
-  height: 60px;
-  top: 0;
-  left: 59px;
-  background: red;
+  width: 2%;
+  height: 40%;
+  top: 10%;
+  left: 49%;
 }
 
-/* Cards & Skills Section */
-.skillsPage {
-  background: #f9f9f9;
-}
-
+/* ===== CARDS ===== */
 .card {
-  margin-bottom: 20px;
-  height: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid black;
+  transition: 0.3s;
+  margin: 1rem auto;
 }
 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
+.card:hover {
+  box-shadow: 8px 8px 8px rgb(205, 205, 224);
+  transform: scale(1.04);
 }
 
-.card-text {
-  font-size: 0.9rem;
+.card .read-more:hover {
+  font-size: 14px;
 }
 
-/* Join Section */
-.joinPage {
-  background-color: #eaf4ff;
-  text-align: center;
+/* ===== COMMUNITY SECTION ===== */
+.RoadmapGuiderCommunity img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
 }
 
-.subscribeBox {
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #007bff;
-  cursor: pointer;
-}
-
-.subscribeBox:hover {
-  background: #007bff;
-  color: white;
-}
-
-/* Community */
 .communityText {
-  font-size: 0.9rem;
-  padding: 0 10px;
-}
-
-/* Footer */
-#footer {
-  background: #222;
-  color: white;
-  padding: 30px;
-}
-
-.emailBox {
   padding: 10px;
-  width: 300px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgb(231, 228, 228);
 }
 
-.subscribeBox {
-  margin-left: 10px;
-  padding: 10px 15px;
-  border: none;
-}
-
-.flexContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
-.icons {
-  width: 30px;
-  margin-right: 10px;
-}
-
-/* Scroll to top */
-.upArrowButton {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
+/* ===== CONTACT US POPUP ===== */
+#contact_us {
   display: none;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgb(190, 190, 190);
+  z-index: 999;
+}
+
+.contactInput,
+textarea {
+  padding: 5px 0px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(190, 190, 190);
+  text-align: center;
+  width: 100%;
+}
+
+#contactSubmit {
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: blue;
+  border: 2px solid black;
+  margin-top: 15px;
+}
+
+#contactSubmit:hover {
+  background-color: blue;
+  color: white;
+  transition: 0.3s;
+}
+
+#ContactCrosIcon {
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* ===== UP ARROW BUTTON ===== */
+.upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
 }
 
 .upArrowButton.active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 1024px) {
+  .quote {
+    top: 15%;
+    font-size: 24px;
+    width: 300px;
+  }
+
+  #clockContainer {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 @media (max-width: 768px) {
+  .quote {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+  }
+
   #clockContainer {
     display: none;
+  }
+}
+/* Footer Container */
+#footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Subscribe Section */
+#subscribeSection p:first-child {
+  font-weight: bold;
+  color: white;
+}
+
+.emailBox {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.subscribeBox {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid blue;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribeBox:hover {
+  background: blue;
+  color: white !important;
+}
+
+/* Text and Flex Layout */
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Social Media Icons */
+#socialMediaSection .icons {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+#socialMediaSection .icons:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright Line */
+#copyrightLine {
+  margin-top: 20px;
+}
+
+.copyrightLine {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  #subscribeSection {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .emailBox {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribeBox {
+    width: 100%;
+  }
+
+  #socialMediaSection {
+    margin-top: 20px;
   }
 }

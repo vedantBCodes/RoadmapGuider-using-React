@@ -29,7 +29,7 @@ const Navbar = () => {
               style={{ border: "none", backgroundColor: "white", color: "blue" }}
             />
           </a>
-          <img src="Images/profileIcon.png" alt="Profile Icon" className="img-fluid profileImg" />
+          <img src="Images/profileIcon.png" alt="Profile Icon" className="img-fluid profileImg" width={30} />
         </div>
       </div>
     </nav>

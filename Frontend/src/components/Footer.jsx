@@ -1,4 +1,5 @@
 import React from "react";
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -57,7 +58,7 @@ const Footer = () => {
       <div id="copyrightLine">
         <h4 className="text-center copyrightLine">
           copyright <img src="Images/copyrightIcon6.png" alt="" className="logo" width={30}/> Made with
-          <img src="Images/heartlogo.png" alt="" className="logo" width={35}/> by Deversh Dandale. All rights reserved.
+          <img src="Images/heartlogo.png" alt="" className="logo" width={35}/> by Vedant Bichkunde. All rights reserved.
         </h4>
       </div>
     </div>

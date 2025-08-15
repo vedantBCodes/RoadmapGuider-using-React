@@ -1,11 +1,11 @@
 #contact_us {
-  display: none; /* Will be shown via React conditionally */
+  display: none;
   margin: 20px;
   position: absolute;
   top: 85px;
-  left: 500px;
-  width: 450px;
-  padding: 50px;
+  left: 550px; /* shifted a bit right for smaller form */
+  width: 350px; /* reduced from 450px */
+  padding: 30px; /* reduced padding */
   border-radius: 10px;
   color: black;
   background-color: white;
@@ -13,20 +13,16 @@
   z-index: 999;
 }
 
-#contact_us input {
-  border: 2px solid white;
-  background-color: white;
-}
-
-#contact_us input:hover {
-  border: 2px solid white;
-  color: white;
-}
-
-.contactInput, textarea {
+.contactInput,
+textarea {
   padding: 5px 0px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+  text-align: center;
+}
+
+.contactInput {
+  width: 160px; /* reduced from 200px */
   text-align: center;
 }
 
@@ -35,25 +31,22 @@
   transition: 1s;
 }
 
-.contactInput {
-  width: 250px;
-  text-align: center;
-}
-
 #contact_us > label {
-  font-size: 20px;
+  font-size: 18px; /* slightly smaller */
 }
 
 textarea {
+  width: 100%; /* takes up available width */
   border-radius: 10px;
+  font-size: 18px;
 }
 
 #contactSubmit {
-  padding: 10px 30px;
+  padding: 8px 20px;
   border-radius: 5px;
   position: relative;
-  top: 20px;
-  left: 120px;
+  top: 15px;
+  left: 90px; /* adjusted for smaller form */
   color: blue;
   border: 2px solid black;
 }
@@ -65,16 +58,17 @@ textarea {
 }
 
 #ContactCrosIcon {
-  width: 30px;
+  width: 25px;
   position: relative;
-  left: 350px;
-  bottom: 30px;
+  left: 300px; /* adjusted for smaller form */
+  bottom: 20px;
   cursor: pointer;
 }
 
 #message {
-  font-size: 20px;
+  font-size: 18px;
 }
+
 #contact_us.show {
   display: block;
 }

@@ -42,7 +42,7 @@ const Community = () => {
             <center>
               <hr style={{ width: "200px", border: "1px solid black" }} />
             </center>
-            <p style={{ textAlign: "center" }} className="communityText">
+            <p style={{ textAlign: "center" , fontSize:'17px' }} className="communityText">
               {member.message}
             </p>
           </div>

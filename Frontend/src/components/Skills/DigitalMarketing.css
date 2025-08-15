@@ -1,0 +1,137 @@
+/* DigitalMarketing.css (drop into your project) */
+
+/* HERO / FIRST SUBPAGE */
+#firstSubPage {
+  width: 100vw;
+  min-height: 80vh; /* use min-height so content can grow */
+  background-image: url("/Images/Digital_Marketing_Images/firstSubpageBgImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+
+/* SIDEBAR QUESTIONS (movable - not sticky) */
+#Questions {
+  padding: 20px 30px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 8px 8px 8px rgba(205,205,224,0.95);
+  border-radius: 10px;
+  position: static; /* important: keeps it in normal flow */
+}
+
+/* sidebar links */
+#Questions a {
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+#Questions a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* RELATED COURSES - images responsive and consistent */
+.relatedCourses img {
+  width: 100% !important;   /* override hard-coded html width if any */
+  max-width: 370px;
+  height: auto !important;
+  border-radius: 10px;
+  display: block;
+}
+.articleName {
+  color: blue;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.articleName:hover {
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* MAIN CONTENT PADDING */
+#rightSideOfPage {
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+/* images inside padded wrappers should fill the available width */
+.p-5 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* T-SHAPED image (replace inline styles with this class in JSX) */
+.t-shaped-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESOURCES: full-width section centered with 10% horizontal padding */
+#resources {
+  padding: 2rem 10%;
+  box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+}
+
+/* images inside resources */
+#resources img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* SMALLER SCREENS (responsiveness) */
+@media (max-width: 991px) {
+  #firstSubPage {
+    height: 60vh;
+    background-position: top center;
+    padding: 1rem;
+  }
+  #rightSideOfPage {
+    padding: 20px;
+  }
+  #resources {
+    padding: 2rem 5%;
+  }
+  .relatedCourses img {
+    max-width: 100%;
+  }
+}
+
+/* Ensure images with inline style attributes still behave on very small screens:
+   we use !important to override inline width/height on mobile devices */
+@media (max-width: 576px) {
+  #firstSubPage {
+    height: 50vh;
+  }
+  #Questions {
+    margin-bottom: 1rem;
+  }
+  .t-shaped-img {
+    width: 100%;
+  }
+  .p-5 {
+    padding: 1rem;
+  }
+  /* override inline style attributes if present */
+  img[style] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}

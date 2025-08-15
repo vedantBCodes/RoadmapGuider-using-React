@@ -1,0 +1,194 @@
+/* src/components/GraphicDesigning.css */
+
+/* HERO / TOP BANNER */
+#firstGDSubPage {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("/Images/graphicDesigningBgImage.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* small logo tweak */
+.logo-img {
+  padding: 8px;
+}
+
+/* second subpage hero block (text + form) */
+.secondSubPageBg {
+  background-image: url("/Images/Graphic_Designing_Images/secondSubpageBgImage.avif");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: white;
+  padding-top: 70px;
+}
+
+/* hero left text */
+#firstPara {
+  width: 40vw;
+  margin-left: 70px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+/* lead form on right */
+.lead-form {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 360px;
+}
+
+/* inputs inside form */
+.lead-form input[type="text"],
+.lead-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 12px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.lead-form input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 6px;
+}
+
+/* QUESTIONS SIDEBAR */
+#Questions {
+  padding: 20px;
+  color: black;
+  background-color: #fff;
+  box-shadow: 8px 8px 8px rgba(205, 205, 224, 0.9);
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+}
+
+#Questions a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+#Questions a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* MAIN ARTICLE */
+.answer {
+  padding: 30px 30px 10px 0;
+}
+
+.questionHead {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.questionPara {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* tips panel on right */
+.tips {
+  width: auto;
+  font-size: 18px;
+  padding: 30px;
+  background-color: #f9f6f6;
+  box-shadow: 8px 8px 8px rgba(205, 205, 224, 0.9);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* typography for tips heading */
+.tipsHeading {
+  font-size: 26px;
+  padding: 8px;
+  background-color: #dbe1e6;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* card like styling for main content area */
+.secondHalf {
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px rgba(231, 227, 227, 0.9);
+}
+
+/* up arrow (keeps same selectors used globally) */
+.upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  z-index: 2000;
+}
+.upArrowButton.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* responsive tweaks */
+@media (max-width: 992px) {
+  #firstPara {
+    width: 55vw;
+    margin-left: 30px;
+  }
+  .lead-form {
+    max-width: 340px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondSubPageBg {
+    height: 50vh;
+    padding-top: 30px;
+  }
+  #firstPara {
+    width: 90%;
+    margin-left: 0;
+  }
+  #Questions {
+    position: relative;
+    top: auto;
+    margin-bottom: 20px;
+  }
+  .col-3 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,171 @@
+/* Scope all base font sizing to this component */
+#cs-container * {
+  font-size: 20px;
+}
+
+/* Hero / first subsection background */
+#cs-firstSubPage {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(Images/cyberSecurityBgImage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Vertical line in sidebar */
+#cs-verticle_line {
+  margin-top: 30px;
+  width: 2px;
+  height: 350px;
+  background-color: silver;
+}
+
+/* Sidebar and links */
+#cs-links {
+  width: 300px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#cs-links a {
+  font-size: 20px;
+  color: rgb(83, 80, 80);
+  text-decoration: none;
+}
+
+#cs-links a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Flex wrapper for the sidebar content */
+.cs-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Make sure generic link hover inside component is safe */
+#cs-container a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Sidebar box */
+.cs-firstHalf {
+  padding: 30px;
+  height: 550px;
+  padding-top: 0px;
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(231, 227, 227);
+  position: sticky;
+  top: 10px;
+}
+
+/* Main content area */
+.cs-secondHalf {
+  padding: 30px;
+  padding-top: 0px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgb(231, 227, 227);
+}
+
+#cs-information {
+  padding: 30px;
+  padding-top: 0;
+}
+
+/* Frequently Asked Question spacing */
+#cs-FrequentlyAskedQuestion {
+  margin: 50px 200px;
+}
+
+/* Utility styles that were in the original file */
+#cs-container span {
+  display: block;
+  margin-top: 20px;
+}
+
+#cs-container hr {
+  border: 1px solid #ccc;
+}
+
+/* FAQ Accordion (Bootstrap-based) */
+#cs-faqAccordion .accordion-button {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#cs-faqAccordion .accordion-body {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Scroll-to-top button */
+.cs-upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.cs-upArrowButton.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Images inside content */
+#cs-information img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 992px) {
+  .cs-firstHalf {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .cs-secondHalf {
+    width: 100%;
+  }
+
+  #cs-FrequentlyAskedQuestion {
+    margin: 20px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #cs-container * {
+    font-size: 18px;
+  }
+
+  #cs-links a {
+    font-size: 18px;
+  }
+
+  .cs-upArrowButton {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+}

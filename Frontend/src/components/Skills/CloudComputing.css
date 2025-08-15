@@ -1,0 +1,256 @@
+/* CloudComputing.css - Scoped to CloudComputing page */
+
+.cloudComputingPage {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* First SubPage */
+#firstCCSubPage {
+  background-color: black;
+  color: white;
+  padding-bottom: 50px;
+  padding-left: 70px;
+}
+
+.cc-first-subpage img {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.cc-first-subpage .display-4 {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.cc-first-subpage p + p {
+  padding-left: 70px;
+}
+
+.cc-first-subpage .cc-register-btn {
+  padding: 10px 20px;
+  margin-left: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  transition: box-shadow 0.7s;
+}
+
+.cc-first-subpage .cc-register-btn:hover {
+  box-shadow: 2px 2px 2px rgb(234, 234, 239);
+}
+
+/* Left nav */
+.cc-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.cc-vertical-line {
+  width: 8px;
+  height: 500px;
+  background-color: black;
+}
+
+.cc-links {
+  width: 1600px;
+  padding-left: 20px;
+}
+
+.cc-links a {
+  font-size: 20px;
+  color: rgb(83, 80, 80);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cc-links a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Content area */
+.cc-information {
+  padding: 50px;
+  padding-top: 50px;
+}
+
+/* Image styling */
+.cc-image {
+  background-color: #ae9f9f;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+/* Table styling */
+.cloudComputingPage table,
+.cloudComputingPage tr,
+.cloudComputingPage td,
+.cloudComputingPage th {
+  border: 1px solid rgb(243, 236, 236);
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.cloudComputingPage td {
+  width: 500px;
+  vertical-align: top;
+}
+
+.cc-related-topics {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.cc-related-topics a {
+  color: blue;
+  text-decoration: none;
+}
+
+.cc-related-topics a:hover {
+  text-decoration: underline;
+}
+
+.cloudComputingPage td:hover {
+  background-color: rgb(236, 238, 240);
+}
+
+.cloudComputingPage table {
+  margin: 0 150px;
+  width: auto;
+}
+
+/* FAQ Section */
+.cc-faq-section {
+  margin: 50px 200px;
+}
+
+.cloudComputingPage hr {
+  border: 1px solid black;
+}
+
+/* Sidebar */
+.cc-first-half {
+  padding: 30px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(231, 227, 227);
+  position: sticky;
+  top: 10px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.cc-second-half {
+  margin-right: 10px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgb(231, 227, 227);
+  background-color: white;
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+/* Scroll up button */
+.cc-up-arrow {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.cc-up-arrow.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Details & summary */
+.cc-faq-section details summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.cc-faq-section details[open] summary {
+  background-color: #d3d3d3;
+}
+
+.cc-faq-section details p {
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.text-center {
+    text-align: center;
+}
+
+.relatedTopics {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.relatedTopics p:first-child {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.relatedTopics h5 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.relatedTopics p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 20px;
+}
+/* Make left-side questions section sticky */
+.questions-section {
+    position: sticky;
+    top: 20px; /* space from top of viewport */
+    align-self: flex-start;
+}
+
+/* Center content for Resources & FAQs with padding */
+.center-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Optional: ensure it doesn’t stretch too wide on large screens */
+.center-section > * {
+    max-width: 1200px;
+    margin: 0 auto;
+}

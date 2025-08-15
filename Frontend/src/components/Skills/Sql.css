@@ -1,0 +1,196 @@
+/* Global font size to match original HTML */
+#sql-container * {
+  font-size: 20px;
+}
+
+/* First section background */
+#sql-firstSubPage {
+  width: 100vw;
+  height: 70vh;
+  background-image: url(Images/sqlBgImage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Sidebar */
+.sql-firstHalf {
+  padding: 30px 15px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(231, 227, 227);
+  height: fit-content;
+}
+
+#sql-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#sql-links a {
+  color: rgb(83, 80, 80);
+  text-decoration: none;
+}
+
+#sql-links a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Q1–Q5 section */
+#sql-information {
+  padding: 30px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgb(231, 227, 227);
+}
+
+#sql-container span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* Full-width sections (Q6 & Q7) */
+#sql-howToLearn,
+#sql-resources {
+  width: 90%;
+  margin: 40px auto;
+}
+
+#sql-howToLearn img,
+#sql-resources img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+#sql-footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+}
+
+#sql-subscribeSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sql-subscribeSection .title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#sql-subscribeSection .subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.sql-emailBox {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.sql-subscribeBox {
+  padding: 8px 15px;
+  border: none;
+  background: #f90;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sql-subscribeBox:hover {
+  background: #d87d00;
+}
+
+.logo {
+  height: 16px;
+  vertical-align: middle;
+}
+
+#sql-copyrightLine {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Scroll-to-top button */
+.sql-upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.sql-upArrowButton.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 992px) {
+  /* Sidebar + Q1–Q5 stacked on tablets/mobiles */
+  .sql-firstHalf {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #sql-information {
+    width: 100%;
+  }
+
+  #sql-howToLearn,
+  #sql-resources {
+    width: 95%;
+  }
+
+  #sql-subscribeSection .title {
+    font-size: 24px;
+  }
+
+  #sql-subscribeSection .subtitle {
+    font-size: 16px;
+  }
+
+  .sql-emailBox {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sql-subscribeBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile adjustments */
+  #sql-container * {
+    font-size: 18px;
+  }
+
+  #sql-links a {
+    font-size: 18px;
+  }
+
+  .sql-upArrowButton {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+}

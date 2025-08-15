@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinSection = () => {
   return (
-    <div className="joinPage my-5 py-5">
+    <div className="joinPage mb-3 py-4">
       <div className="row justify-content-center">
         <div className="col-4">
           <p className="display-6">

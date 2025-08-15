@@ -1,0 +1,154 @@
+/* Hero Section */
+#firstVISubPage {
+  width: 100vw;
+  height: 70vh;
+  background-image: url('/Images/videoEditingBgImage.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Images */
+img {
+  border-radius: 10px;
+}
+
+#trainingImage {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Training Section */
+.training {
+  color: white;
+  background-color: black;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+input:hover {
+  box-shadow: 1px 1px 1px rgb(205, 205, 224);
+  transform: scale(1.001);
+}
+
+input[type="submit"] {
+  width: 150px;
+}
+
+/* Text Styling */
+p {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.articleName {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: blue;
+  font-size: 25px;
+}
+
+.articleName:hover {
+  color: black;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* FAQ Section */
+.Question {
+  border: 2px solid black;
+  padding: 20px 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.Question p {
+  font-size: 15px;
+  text-indent: 50px;
+}
+
+summary {
+  font-size: 20px;
+}
+
+/* Cards */
+.card .read-more:hover {
+  font-size: 14px;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 8px rgb(205, 205, 224);
+  transform: scale(1.04);
+}
+
+.card {
+  height: 370px;
+  width: 300px;
+  color: black;
+  border: 2px solid black;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+.card-body {
+  color: black;
+}
+
+.card img {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* Scroll to Top Button */
+.upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.upArrowButton.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  #firstSubPage {
+    height: 50vh;
+  }
+}

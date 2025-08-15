@@ -1,0 +1,170 @@
+.ai-page-root * {
+  font-size: 20px;
+}
+
+#firstSubPage {
+  width: 100vw;
+  height: 85vh;
+  background-image: url(Images/artificialIntelligenceBgImage5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#links {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-shadow: 8px 8px 8px rgb(205, 205, 224);
+  position: sticky;
+  top: 10px;
+}
+
+#links a {
+  color: rgb(83, 80, 80);
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+
+#links a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#information {
+  flex: 1;
+  padding: 30px 20px;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 4px rgb(231, 227, 227);
+}
+
+.center-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+#FrequentlyAskedQuestion {
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.upArrowButton {
+  background: rgb(166, 165, 165);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.upArrowButton.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  #links {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    box-shadow: none;
+  }
+  #information {
+    width: 100%;
+  }
+}
+/* Sidebar (questions) */
+.ai-page-root #links {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding-left: 40px; 
+  padding-right: 40px; /* Added right padding */
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  box-shadow: 8px 8px 8px rgb(205, 205, 224);
+  position: sticky;
+  top: 10px;
+}
+
+/* Content area */
+.ai-page-root #information {
+  flex: 1;
+  padding-left: 50px; 
+  padding-right: 50px; /* Added horizontal padding */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 4px rgb(231, 227, 227);
+}
+
+/* Headings */
+.ai-page-root #information h3 {
+  font-weight: bold;
+  font-size: 2rem !important; /* Larger main headings */
+  margin-top: 20px;
+}
+
+.ai-page-root #information h4 {
+  font-weight: bold;
+  font-size: 1.5rem !important; /* Slightly smaller than main headings */
+  margin-top: 15px;
+}
+
+/* Sidebar headings (links) */
+.ai-page-root #links a {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.faq-section {
+  width: 100%;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 4px rgb(231, 227, 227);
+  background: #fff;
+}
+
+.faq-section h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.faq-section details {
+  margin-bottom: 15px;
+}

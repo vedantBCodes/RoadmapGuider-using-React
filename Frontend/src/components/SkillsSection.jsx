@@ -142,7 +142,7 @@ const SkillsSection = () => {
                 <Link to={item.link} className="atag">
                   <img src={item.image} className="card-img-top skill-img" alt={item.title} />
                   <div className="card-body">
-                    <h5 className="card-title">{item.title}</h5>
+                    <h5 className="card-title" style={{fontSize:'20px'}}>{item.title}</h5>
                     <p className="card-text" style={{fontSize:'15px'}}>{item.description}</p>
                     <p className="card-text">
                       <small className="text-body-secondary" style={{fontSize:'15px'}}>{item.updated}</small>

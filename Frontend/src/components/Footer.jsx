@@ -20,7 +20,7 @@ const Footer = () => {
             type="submit"
             value="Subscribe To RoadmapGuider"
             className="subscribeBox"
-            style={{ color: "blue" }}
+            style={{ color: "blue",width:"300px" }}
           />
         </form>
         <br />
@@ -57,8 +57,8 @@ const Footer = () => {
       <hr style={{ border: "1px solid white" }} />
       <div id="copyrightLine">
         <h4 className="text-center copyrightLine">
-          copyright <img src="Images/copyrightIcon6.png" alt="" className="logo" width={30}/> Made with
-          <img src="Images/heartlogo.png" alt="" className="logo" width={35}/> by Vedant Bichkunde. All rights reserved.
+          copyright <img src="Images/copyrightIcon6.png" alt="" className="logo" width={20}/> Made with
+          <img src="Images/heartlogo.png" alt="" className="logo" width={20}/> by Vedant Bichkunde. All rights reserved.
         </h4>
       </div>
     </div>

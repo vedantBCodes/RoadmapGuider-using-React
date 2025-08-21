@@ -23,7 +23,8 @@
 }
 
 .subscribeBox {
-  padding: 10px 20px;
+  /* width: 350px; */
+  padding: 10px 10px;
   border-radius: 8px;
   border: 2px solid blue;
   background: white;

@@ -1,7 +1,7 @@
 /* DigitalMarketing.css (drop into your project) */
 
 /* HERO / FIRST SUBPAGE */
-#firstSubPage {
+#firstDMSubPage {
   width: 100vw;
   min-height: 80vh; /* use min-height so content can grow */
   background-image: url("/Images/Digital_Marketing_Images/firstSubpageBgImage.jpeg");
@@ -57,7 +57,7 @@
 
 /* MAIN CONTENT PADDING */
 #rightSideOfPage {
-  padding: 50px 30px;
+  padding: 50px 20px 50px 100px;
   box-sizing: border-box;
 }
 

@@ -22,6 +22,7 @@ import Sql from "./components/Skills/Sql.jsx";
 import DataAnalyst from "./components/Skills/DataAnalyst.jsx";
 import CyberSecurity from "./components/Skills/CyberSecurity.jsx";
 import ArtificialIntelligence from "./components/Skills/ArtificialIntelligence.jsx";
+import Programming from "./components/Skills/Programming.jsx";
 
 function App() {
   const [showContact, setShowContact] = useState(false);
@@ -135,6 +136,15 @@ function App() {
           element={
             <>
               <ArtificialIntelligence />
+              <Footer /> {/* Keep footer if you want */}
+            </>
+          }
+        />
+        <Route
+          path="/programming"
+          element={
+            <>
+              <Programming />
               <Footer /> {/* Keep footer if you want */}
             </>
           }

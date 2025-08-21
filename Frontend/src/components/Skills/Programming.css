@@ -1,0 +1,159 @@
+     #firstPSubPage 
+       {
+            width: 100vw;
+            height: 85vh;
+            background-image: url('/Images/programmingBgImge.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #verticle_line {
+            margin-left: 50px;
+            margin-top: 30px;
+            width: 2px;
+            height: 500px;
+            background-color: silver;
+        }
+        #links a {
+            margin-top: 20px;
+        }
+        #links {
+            width: 400px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        #links a {
+            font-size: 20px;
+            color: rgb(83, 80, 80);
+            text-decoration: none;
+        }
+        #links a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+        #information {
+            padding: 30px;
+            padding-top: 20px;
+            width: 1200px;
+            margin: 70px;
+            margin-top: 0px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 4px rgb(231, 227, 227);
+        }
+        center img {
+            width: 600px;
+            border-radius: 10px;
+        }
+        * {
+            font-size: 20px;
+        }
+        #verticle_line,
+        #links {
+            height: 650px;
+            border-radius: 20px;
+            box-shadow: 8px 8px 8px rgb(205, 205, 224);
+            position: sticky;
+            top: 10px;
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+        #FrequentlyAskedQuestion,
+        #Books {
+            margin: 50px 200px;
+        }
+        hr {
+            border: 1px solid black;
+        }
+        #Books {
+            font-size: 20px;
+        }
+        .bookInfo {
+            background-color: rgb(236, 238, 240);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .bookImage {
+            background-color: rgb(231, 231, 231);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        input[type="button"] {
+            padding: 10px 10px;
+            color: white;
+            border-radius: 10px;
+            background-color: blue;
+            width: 150px;
+        }
+        input[type="button"]:hover {
+            box-shadow: 2px 2px 2px 2px rgb(65, 65, 214);
+            transition: 0.7s;
+        }
+/* Css code for up scroll icon */
+.upArrowButton {
+    background: rgb(166, 165, 165);
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .upArrowButton.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+  .flex-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+}
+
+#links {
+  width: 20%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+#links span {
+  display: block;
+  margin-bottom: 12px;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+#links a:hover {
+  color: #007bff;
+}
+
+#information {
+  width: 80%;
+  padding: 20px;
+}
+.Q7
+{
+    margin: 0% 10%;
+}

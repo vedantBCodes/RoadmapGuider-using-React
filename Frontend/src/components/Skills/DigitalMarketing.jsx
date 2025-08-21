@@ -7,7 +7,7 @@ const DigitalMarketing = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div id="firstSubPage">
+      <div id="firstDMSubPage">
         <NavLink to="/">
           <img
             src="/Images/RgLogo.png"
@@ -26,32 +26,22 @@ const DigitalMarketing = () => {
             <p className="h2">Digital Marketing</p>
             <br />
             <a href="#Q1">What is Digital Marketing ?</a>
-            <br />
-            <br />
             <a href="#Q2">
               Which Skills Do You Need for Digital Marketing Success ?
             </a>
-            <br />
-            <br />
             <a href="#Q3">
               Is It Worth Paying for a Digital Marketing Course ?
             </a>
-            <br />
-            <br />
             <a href="#Q4">How to Learn Digital Marketing at home for Free ?</a>
-            <br />
-            <br />
             <hr style={{ border: "2px solid black" }} />
             <a href="#eBooks">Top 5 Free Digital Marketing eBooks</a>
-            <br />
-            <br />
             <a href="#resources">
               Resources To Help You Learn Digital Marketing
             </a>
           </div>
 
           {/* Related Courses */}
-          <div className="relatedCourses mt-5">
+          <div className="relatedCourses mt-5 ">
             <p className="h4 ps-3">Related Articles</p>
             <p className="ps-3">(Recommended for you)</p>
 

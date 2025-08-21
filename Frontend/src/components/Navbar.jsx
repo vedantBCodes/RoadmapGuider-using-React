@@ -21,7 +21,7 @@ const Navbar = () => {
         <div id="aboutAndSignIn">
           <a href="https://vedantbcodes.github.io/My-personal-portfolio/" target="_blank">About Me</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <img src="Images/logInIcon.png" alt="Login Icon" style={{ width: "30px", height: "25px" }} />
+          <img src="Images/logInIcon.png" alt="" style={{ width: "30px", height: "25px" }}  id="loginIcon"/>
           <a href="/signin">
             <input
               type="submit"

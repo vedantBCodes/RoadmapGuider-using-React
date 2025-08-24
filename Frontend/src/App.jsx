@@ -23,6 +23,18 @@ import DataAnalyst from "./components/Skills/DataAnalyst.jsx";
 import CyberSecurity from "./components/Skills/CyberSecurity.jsx";
 import ArtificialIntelligence from "./components/Skills/ArtificialIntelligence.jsx";
 import Programming from "./components/Skills/Programming.jsx";
+// import JoinSection from "./JoinSection";
+// import { JoinProvider } from "./components/JoinForm/JoinContext.jsx";
+// import Step1 from "./components/JoinForm/Step1.jsx";
+// import Step2 from "./components/JoinForm/Step2.jsx";
+// import Step3 from "./components/JoinForm/Step3.jsx";
+// import Join from "./components/JoinForm/Join.jsx";
+import MultiStepForm from "./components/JoinForm/MultiStepForm.jsx";
+import { ToastContainer } from "react-toastify";
+
+
+
+
 
 function App() {
   const [showContact, setShowContact] = useState(false);
@@ -33,6 +45,7 @@ function App() {
 
   return (
     <Router>
+        {/* <JoinProvider> */}
       <Routes>
         {/* Homepage */}
         <Route
@@ -149,7 +162,13 @@ function App() {
             </>
           }
         />
+       <Route path="/join" element={<MultiStepForm />} />
+
+
+     
       </Routes>
+       <ToastContainer position="top-center" autoClose={3000} />
+       {/* </JoinProvider> */}
 
       {/* Contact Us Popup */}
       {showContact && <ContactUs onClose={toggleContact} />}
